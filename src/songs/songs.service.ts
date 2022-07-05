@@ -56,12 +56,12 @@ export class SongsService {
             const recentSongAudioFeatures = response.data.audio_features.map(
               (features) => {
                 const songAudioFeature: AudioFeaturesModel = {
-                  danceability: features.danceability,
-                  acousticness: features.acousticness,
-                  energy: features.energy,
-                  valence: features.valence,
-                  tempo: features.tempo,
-                  key: features.key,
+                  danceability: features?.danceability || 0,
+                  acousticness: features?.acousticness || 0,
+                  energy: features?.energy || 0,
+                  valence: features?.valence || 0,
+                  tempo: features?.tempo || 0,
+                  key: features?.key || 0,
                 };
                 return songAudioFeature;
               },
