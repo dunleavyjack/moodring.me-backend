@@ -25,6 +25,7 @@
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",
+    "@types/spotify-api": "^0.0.16",
     "axios": "^0.27.2",
     "cors": "^2.8.5",
     "reflect-metadata": "^0.1.13",
